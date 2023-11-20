@@ -44,20 +44,337 @@
 
           <div class="well">
             <!-- Tab panes -->
-            <div class="tab-content"></div>
+            <button onclick="showList(1)" class="menuWear">Áo</button>
+            <button onclick="showList(2)" class="menuWear">Quần</button>
+            <button onclick="showList(3)" class="menuWear">Giày Dép</button>
+            <button onclick="showList(4)" class="menuWear">Túi xách</button>
+            <button onclick="showList(5)" class="menuWear">Dây chuyền</button>
+            <button onclick="showList(6)" class="menuWear">Kiểu tóc</button>
+            <button onclick="showList(7)" class="menuWear">Nền</button>
+            <div class="tab-content container">
+              <!-- List áo -->
+              <div id="idAo" class="listAo" style="display: none">
+                <div class="row">
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/topcloth1_show.jpg"
+                      alt=""
+                    />
+                    <h4>Top cloth 1</h4>
+                    <button onclick="macAo(1)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/topcloth2_show.jpg"
+                      alt=""
+                    />
+                    <h4>Top cloth 2</h4>
+                    <button onclick="macAo(2)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/topcloth3_show.jpg"
+                      alt=""
+                    />
+                    <h4>Top cloth 3</h4>
+                    <button onclick="macAo(3)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/topcloth4_show.jpg"
+                      alt=""
+                    />
+                    <h4>Top cloth 4</h4>
+                    <button onclick="macAo(4)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/topcloth5_show.jpg"
+                      alt=""
+                    />
+                    <h4>Top cloth 5</h4>
+                    <button onclick="macAo(5)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/topcloth6_show.jpg"
+                      alt=""
+                    />
+                    <h4>Top cloth 6</h4>
+                    <button onclick="macAo(6)">Thử đồ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- List quần -->
+              <div id="idQuan" style="display: none" class="listAo">
+                <div class="row">
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/botcloth1_show.jpg"
+                      alt=""
+                    />
+                    <h4>Bot cloth 1</h4>
+                    <button onclick="macQuan(1)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/botcloth2_show.jpg"
+                      alt=""
+                    />
+                    <h4>Bot cloth 2</h4>
+                    <button onclick="macQuan(2)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/botcloth3_show.jpg"
+                      alt=""
+                    />
+                    <h4>Bot cloth 3</h4>
+                    <button onclick="macQuan(3)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/botcloth4_show.jpg"
+                      alt=""
+                    />
+                    <h4>Bot cloth 4</h4>
+                    <button onclick="macQuan(4)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/clothes/botcloth5_show.jpg"
+                      alt=""
+                    />
+                    <h4>Bot cloth 5</h4>
+                    <button onclick="macQuan(5)">Thử đồ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- List giày dép -->
+              <div style="display: none" id="idGiayDep" class="listAo">
+                <div class="row">
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/shoes/shoes1_show.jpg"
+                      alt=""
+                    />
+                    <h4>Shoes 1</h4>
+                    <button onclick="macGiay(1)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/shoes/shoes2_show.jpg"
+                      alt=""
+                    />
+                    <h4>Shoes 2</h4>
+                    <button onclick="macGiay(2)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/shoes/shoes3_show.jpg"
+                      alt=""
+                    />
+                    <h4>Shoes 3</h4>
+                    <button onclick="macGiay(3)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/shoes/shoes4_show.jpg"
+                      alt=""
+                    />
+                    <h4>Shoes 4</h4>
+                    <button onclick="macGiay(4)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/shoes/shoes5_show.jpg"
+                      alt=""
+                    />
+                    <h4>Shoes 5</h4>
+                    <button onclick="macGiay(5)">Thử đồ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- List túi xách -->
+              <div style="display: none" id="idTui" class="listAo">
+                <div class="row">
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/handbags/handbag1_show.jpg"
+                      alt=""
+                    />
+                    <h4>Hand Bag 1</h4>
+                    <button onclick="macTui(1)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/handbags/handbag2_show.jpg"
+                      alt=""
+                    />
+                    <h4>Hand Bag 2</h4>
+                    <button onclick="macTui(2)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/handbags/handbag3_show.jpg"
+                      alt=""
+                    />
+                    <h4>Hand Bag 3</h4>
+                    <button onclick="macTui(3)">Thử đồ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- List dây chuyền -->
+              <div style="display: none" id="idDay" class="listAo">
+                <div class="row">
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/necklaces/necklace1_show.jpg"
+                      alt=""
+                    />
+                    <h4>Necklace 1</h4>
+                    <button onclick="macDay(1)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/necklaces/necklace2_show.jpg"
+                      alt=""
+                    />
+                    <h4>Necklace 2</h4>
+                    <button onclick="macDay(2)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/necklaces/necklace3_show.jpg"
+                      alt=""
+                    />
+                    <h4>Necklace 3</h4>
+                    <button onclick="macDay(3)">Thử đồ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- List toc -->
+              <div style="display: none" id="idToc" class="listAo">
+                <div class="row">
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/hairstyle/hairstyle1_show.jpg"
+                      alt=""
+                    />
+                    <h4>Hair style 1</h4>
+                    <button onclick="macToc(1)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/hairstyle/hairstyle2_show.jpg"
+                      alt=""
+                    />
+                    <h4>Hair style 2</h4>
+                    <button onclick="macToc(2)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/hairstyle/hairstyle3_show.jpg"
+                      alt=""
+                    />
+                    <h4>Hair style 3</h4>
+                    <button onclick="macToc(3)">Thử đồ</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- List Nền -->
+              <div style="display: none" id="idNen" class="listAo">
+                <div class="row">
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/background/background1_show.jpg"
+                      alt=""
+                    />
+                    <h4>Background 1</h4>
+                    <button onclick="macNen(1)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/background/background2_show.jpg"
+                      alt=""
+                    />
+                    <h4>Background 2</h4>
+                    <button onclick="macNen(2)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/background/background3_show.jpg"
+                      alt=""
+                    />
+                    <h4>Background 3</h4>
+                    <button onclick="macNen(3)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/background/background4_show.jpg"
+                      alt=""
+                    />
+                    <h4>Background 4</h4>
+                    <button onclick="macNen(4)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/background/background5_show.jpg"
+                      alt=""
+                    />
+                    <h4>Background 5</h4>
+                    <button onclick="macNen(5)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/background/background6_show.jpg"
+                      alt=""
+                    />
+                    <h4>Background 6</h4>
+                    <button onclick="macNen(6)">Thử đồ</button>
+                  </div>
+                  <div class="item col-3">
+                    <img
+                      src=".././assets/images/background/background7_show.jpg"
+                      alt=""
+                    />
+                    <h4>Background 7</h4>
+                    <button onclick="macNen(7)">Thử đồ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="col-md-4">
           <div class="contain">
             <div class="body"></div>
             <div class="model"></div>
-            <div class="hairstyle"></div>
-            <div class="necklace"></div>
+            <!-- TÓC -->
+            <div id="layoutToc" class="hairstyle"></div>
+            <!-- GIAY DÉP -->
+            <div id="layoutGiay" class="necklace"></div>
             <div class="bikinitop"></div>
+            <!-- ÁO -->
+            <div id="layoutAo"></div>
+            <!-- DÂY CHUYỀN -->
+            <div id="layoutDay"></div>
+            <!-- BACKGROUND -->
+            <div id="layoutNen"></div>
             <div class="bikinibottom"></div>
-            <div class="handbag"></div>
+            <!-- QUẦN -->
+            <div id="layoutQuan" class="handbag"></div>
+            <!-- ÁO -->
             <div class="feet"></div>
-            <div class="background"></div>
+            <!-- TÚI -->
+            <div id="layoutTui" class="background"></div>
           </div>
         </div>
       </div>
@@ -79,6 +396,8 @@
     <script src="./../models/ListChosen.js"></script>
     <script src="./../models/ChoseItem.js"></script>
     <script src="./../utils/callData.js"></script>
-    <script src="./../controllers/main.js"></script>
+    <script src="./../controllers/dressing.js"></script>
+    <!-- My js -->
+    <script src="../controllers/dressing.js"></script>
   </body>
 </html>
